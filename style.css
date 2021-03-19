@@ -23,6 +23,8 @@ table.crossword-grid {
 }
 .grid-row {
   clear: left;
+  /* display: inline-flex;
+  justify-content: center; */
 }
 .grid-square {
   position: relative;
@@ -155,6 +157,7 @@ body {
 
 .page-header {
     color: #fff;
+    margin-top: 2em;
 }
 
 .container {
@@ -168,4 +171,120 @@ body {
 .grid-square.correct-across,
 .grid-square.correct-down {
   background-color: #dff082 !important;
+}
+
+
+
+/* the below are from the inspector shit*/
+
+
+.grid-row1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    /* -ms-flex-wrap: wrap; */
+    margin: 0 -1.2rem;
+}
+
+img.mb1 {
+margin-top: 2rem;
+}
+
+.mb1 {
+    margin-bottom: .8rem;
+}
+
+/* canvas, iframe, img, svg, video {
+    max-width: 64%;
+} */
+
+p.small {
+    font-weight: 400;
+    line-height: 1;
+}
+
+
+img.icon.mb1 {
+  height: 2em;
+}
+
+.grid-column.span-one-third.mt1.reveal-on-scroll.is-revealing {
+  flex-basis: 33.33333%;
+  max-width: 23.33333%;
+  margin-bottom: 2em;
+}
+
+.grid-column.span-one-third.mt1.reveal-on-scroll.is-revealing p {
+  color: #fff;
+  margin-bottom: -0.5em;
+}
+
+p.small {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+.grid-column.span-2.mt2 {
+  margin: 0 4em 0 4em;
+}
+
+
+.grid-column.span-2.mt2 img {
+  border-radius: 50%;
+}
+
+img.argiro {width: 100%;height: auto;}
+
+section.pt2.pb3 {text-align: center;}
+
+.grid-column.span-2.mt2 .mb1 {
+  max-width: 100%;
+}
+
+.grid-column.span-2.mt2.teach img {
+  max-width: 50% !important;
+}
+
+h3.mb1 {
+  color: #fff;
+}
+
+h1.mb3.reveal-on-scroll.is-revealing {
+  text-align: center;
+  color: #fff;
+}
+
+p.mb1 {
+  text-align: center;
+  font-size: 23px;
+  color: #fff;
+}
+
+section.pt2.pb3 {
+  margin-top: 1em;
+}
+
+body * {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+p.small i {
+  font-size: 12px;
+}
+
+img.icon.mb1 + p {
+  font-size: 26px;
+}
+
+.crossword {
+  margin-top: 2em;
 }
